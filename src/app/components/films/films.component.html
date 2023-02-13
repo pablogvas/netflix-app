@@ -1,0 +1,9 @@
+<div class = "container-pelis">
+    <h1 class = "">{{media.category}}</h1>
+    <ul class = "lista-pelis">
+        <li *ngFor="let movie of media.movies">
+            <h2 class = "titulo-pelis">{{movie.tittle}}</h2>
+            <img class = "imagen-pelis" src = "{{movie.src}}">
+        </li>
+    </ul>
+</div>

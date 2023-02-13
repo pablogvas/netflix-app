@@ -1,0 +1,9 @@
+<div class = "container-top10">
+    <h1 class = "titulo-top10">{{top.category}}</h1>
+    <ul class = "pelis-top10">
+        <li *ngFor="let pelicula of top.movies">
+            <h1 class = "top10-numero">{{pelicula.number}}</h1>
+            <img class = "top10-imagen" src = "{{pelicula.src}}">
+        </li>
+    </ul>
+</div>
